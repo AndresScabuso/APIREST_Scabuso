@@ -20,4 +20,8 @@ export class ToolbarComponent implements OnInit {
     this.user = this.authService.LoggedUser?.userName!;
   }
 
+  logout() {
+    this.authService.logout();
+  }
+
 }
